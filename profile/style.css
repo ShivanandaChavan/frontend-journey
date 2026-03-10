@@ -31,4 +31,16 @@
         img {
             
             border-radius: 50%;
-        }
+            /* Make images responsive and add border radius */
+
+            max-width: 100%; /* image scales with container */
+            height: auto;
+            border-radius: 10px; /* rounded corners */
+            transition: transform 0.3s; /* smooth effect on hover */
+            }
+
+       
+            img:hover {
+            transform: scale(1.05); /* slightly enlarge on hover */
+            }
+       
