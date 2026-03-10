@@ -1,46 +1,124 @@
 /* style.css */
-        body {
-            background-color: #83c0d2;
-            font-family: Arial, sans-serif;
-        }
 
-        h1 {
-            color: rgb(16, 16, 58);
-            text-align: center;
-        }
+/* Body styling */
+body {
+    background-color: #ffffff; /* light blue */
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
 
-        h2{
-            color: #000000;
-            border-bottom: px solid gray;
-            }
+/* Main header */
+h1 {
+    color: rgb(16, 16, 58);
+    text-align: center;
+}
 
-        p{
-            font-size: 18px;
-            line-height: 1.6;
-            }
+/* Subheadings */
+h2 {
+    color: #000000;
+    border-bottom: 1px solid gray; /* fixed missing width */
+    padding-bottom: 5px;
+}
 
-        a{
-            color: rgb(61, 61, 152);
-            text-decoration: none;
-            }
+/* Paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
 
-            a:hover{
-            text-decoration: underline;
-            text-decoration-style: solid;
-            }
-        img {
-            
-            border-radius: 50%;
-            /* Make images responsive and add border radius */
+/* Links */
+a {
+    color: rgb(61, 61, 152);
+    
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+}
 
-            max-width: 100%; /* image scales with container */
-            height: auto;
-            border-radius: 10px; /* rounded corners */
-            transition: transform 0.3s; /* smooth effect on hover */
-            }
+a:hover {
+    text-decoration: underline;
+    color: rgb(35, 35, 120); /* darker on hover */
+}
 
-       
-            img:hover {
-            transform: scale(1.05); /* slightly enlarge on hover */
-            }
-       
+/* Images */
+img {
+    max-width: 200px;   /* control size */
+    height: auto;
+    border-radius: 50%; /* circular image */
+    display: block;
+    margin: 10px auto; /* center the image */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* subtle shadow on hover */
+}
+
+/* Lists */
+ul {
+    font-size: 17px;
+}
+
+/* Button-style link */
+/* Google-style button */
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: radial-gradient(
+        45deg, 
+        #4285F4, /* blue */
+        #EA4335, /* red */
+        #FBBC05, /* yellow */
+        #34A853  /* green */
+    );
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+a.btn:hover {
+    color: #4285F4;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+a.gitlink {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    
+    text-align: center;
+}
+
+a.gitlink:hover {
+    color: #0a0a0a;
+    font-weight: bold;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+a.linkedIn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff; /* GitHub black */
+    color: #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+   
+    text-align: center;
+
+}
+a.linkedIn:hover{
+    font-weight: bold;
+    color: #2e47b8;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
