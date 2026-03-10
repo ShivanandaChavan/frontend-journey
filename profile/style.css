@@ -1,8 +1,18 @@
 /* style.css */
 
 /* Body styling */
+.profile-container {
+    width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
 body {
-    background-color: #ffffff; /* light blue */
+    background-color: #f4f6f8;
     font-family: Arial, sans-serif;
     margin: 20px;
 }
@@ -15,6 +25,7 @@ h1 {
 
 /* Subheadings */
 h2 {
+    margin-top: 30px;
     color: #000000;
     border-bottom: 1px solid gray; /* fixed missing width */
     padding-bottom: 5px;
@@ -28,15 +39,13 @@ p {
 
 /* Links */
 a {
-    color: rgb(61, 61, 152);
-    
     text-decoration: none;
-    transition: color 0.3s, text-decoration 0.3s;
+    color: #286fd8;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
-    color: rgb(35, 35, 120); /* darker on hover */
 }
 
 /* Images */
@@ -81,7 +90,7 @@ a.btn {
 }
 
 a.btn:hover {
-    color: #4285F4;
+    color: #286fd8;
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
@@ -89,9 +98,9 @@ a.btn:hover {
 a.gitlink {
     display: inline-block;
     padding: 10px 20px;
-    color: #000000;
+    color: #286fd8;
     border-radius: 5px;
-    text-decoration: none;
+    
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     
     text-align: center;
@@ -100,6 +109,7 @@ a.gitlink {
 a.gitlink:hover {
     color: #0a0a0a;
     font-weight: bold;
+    text-decoration: underline;
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
@@ -107,18 +117,49 @@ a.gitlink:hover {
 a.linkedIn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffffff; /* GitHub black */
-    color: #000000;
+    color: #286fd8;
     border-radius: 5px;
-    text-decoration: none;
+    
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-   
-    text-align: center;
 
 }
 a.linkedIn:hover{
     font-weight: bold;
     color: #2e47b8;
     transform: scale(1.05);
+    text-decoration: underline;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+    p{
+        font-size: 18px;
+    }
+
+    ul {
+        font-size: 17px;
+
+    }
+
+    .navbar {
+    background-color: #1f2937;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #ffffff;
+    margin-right: 20px;
+    font-weight: 600;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+
+    color: #006aec;
+    transform: scale(1.2);
 }
