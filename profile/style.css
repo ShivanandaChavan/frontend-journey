@@ -1,15 +1,4 @@
-/* style.css */
-
-/* Body styling */
-.profile-container {
-    width: 800px;
-    margin: auto;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
+/* ===== Body Styling ===== */
 
 body {
     background-color: #f4f6f8;
@@ -17,27 +6,46 @@ body {
     margin: 20px;
 }
 
-/* Main header */
+.profile-container {
+    width: 800px;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+/* ===== Headings ===== */
+
 h1 {
     color: rgb(16, 16, 58);
     text-align: center;
 }
 
-/* Subheadings */
 h2 {
     margin-top: 30px;
     color: #000000;
-    border-bottom: 1px solid gray; /* fixed missing width */
+    border-bottom: 1px solid gray;
     padding-bottom: 5px;
 }
 
-/* Paragraphs */
+
+/* ===== Text ===== */
+
 p {
     font-size: 18px;
     line-height: 1.6;
 }
 
-/* Links */
+ul {
+    font-size: 17px;
+}
+
+
+/* ===== Links ===== */
+
 a {
     text-decoration: none;
     color: #286fd8;
@@ -48,45 +56,46 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Images */
+
+/* ===== Image ===== */
+
 img {
-    max-width: 200px;   /* control size */
+    max-width: 200px;
     height: auto;
-    border-radius: 50%; /* circular image */
+    border-radius: 50%;
     display: block;
-    margin: 10px auto; /* center the image */
+    margin: 10px auto;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 img:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* subtle shadow on hover */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* Lists */
-ul {
-    font-size: 17px;
-}
 
-/* Button-style link */
-/* Google-style button */
+/* ===== Google Style Button ===== */
+
 a.btn {
     display: inline-block;
     padding: 10px 20px;
+
     background: radial-gradient(
-        45deg, 
-        #4285F4, /* blue */
-        #EA4335, /* red */
-        #FBBC05, /* yellow */
-        #34A853  /* green */
+        45deg,
+        #4285F4,
+        #EA4335,
+        #FBBC05,
+        #34A853
     );
-    color: rgb(0, 0, 0);
+
+    color: black;
     border-radius: 5px;
     text-decoration: none;
+
     transition: transform 0.3s, box-shadow 0.3s;
+
     margin: 10px 0;
     font-weight: bold;
-    text-align: center;
 }
 
 a.btn:hover {
@@ -95,15 +104,16 @@ a.btn:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
+
+/* ===== GitHub Link ===== */
+
 a.gitlink {
     display: inline-block;
     padding: 10px 20px;
     color: #286fd8;
     border-radius: 5px;
-    
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    
-    text-align: center;
+
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 a.gitlink:hover {
@@ -114,16 +124,19 @@ a.gitlink:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
+
+/* ===== LinkedIn Link ===== */
+
 a.linkedIn {
     display: inline-block;
     padding: 10px 20px;
     color: #286fd8;
     border-radius: 5px;
-    
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 
+    transition: transform 0.3s, box-shadow 0.3s;
 }
-a.linkedIn:hover{
+
+a.linkedIn:hover {
     font-weight: bold;
     color: #2e47b8;
     transform: scale(1.05);
@@ -131,16 +144,10 @@ a.linkedIn:hover{
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-    p{
-        font-size: 18px;
-    }
 
-    ul {
-        font-size: 17px;
+/* ===== Navbar ===== */
 
-    }
-
-    .navbar {
+.navbar {
     background-color: #1f2937;
     padding: 12px 20px;
     border-radius: 8px;
@@ -153,28 +160,45 @@ a.linkedIn:hover{
 
 .navbar a {
     color: #ffffff;
-    margin-right: 20px;
     font-weight: 600;
-    transition: transform 0.3s, color 0.3s;
     position: relative;
+
+    transition: transform 0.3s, color 0.3s;
+
+    text-decoration: none;
 }
 
 .navbar a:hover {
     color: #60a5fa;
-    transform: scale(1.1x);
+    transform: scale(1.1);
+    text-decoration: none;
 }
 
+
+/* ===== Navbar Underline Animation ===== */
+
 .navbar a::after {
+
     content: "";
+
     position: absolute;
+
     width: 0;
+
     height: 2px;
+
     left: 0;
+
     bottom: -4px;
+
     background-color: #60a5fa;
+
     transition: width 0.3s;
+
 }
 
 .navbar a:hover::after {
+
     width: 100%;
+
 }
