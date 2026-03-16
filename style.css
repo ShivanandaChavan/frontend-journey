@@ -1,5 +1,7 @@
 /* ===== Body Styling ===== */
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: #f4f6f8;
     font-family: Arial, sans-serif;
@@ -7,6 +9,16 @@ body {
 }
 
 /* ===== Main Container ===== */
+section, h2 {
+  margin-top: 100px;
+}
+section{
+    padding: 60px 29px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
 
 .profile-container {
     max-width: 800px;
